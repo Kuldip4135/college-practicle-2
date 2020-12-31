@@ -448,6 +448,13 @@ footer p {
 .contact-right ul {
   margin-top: 1rem;
 }
+
+/********************* Map Section ******************/
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /********************* Responsive Section ******************/
 
 @media screen and (min-width: 800px) {
