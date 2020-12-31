@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 55%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  opacity: 0.5;
+}
+/********************* Header Section ******************/
+
+header {
+  width: 100%;
+  height: 65vh;
+  background: url("../images/simple-house-01.jpg") no-repeat top center scroll;
+  background-size: cover;
+  background-position: center 75%;
+  background-attachment: fixed;
+  margin-bottom: -16rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  background: hsla(0, 0%, 0%, 0.6);
+  padding: 1rem;
+  backdrop-filter: blur(6px);
+  position: relative;
+  box-shadow: 1px 1px 3px 0px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-left: 0.5rem;
+  line-height: 3.4rem;
+}
+
+.nav-logo img {
+  width: 7rem;
+}
+
+.nav-text h1 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+
+.nav-text p {
+  font-size: 1.6rem;
+  opacity: 1;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  padding: 2rem 0;
+}
+
+.nav-link.active {
+  border-bottom: 1px solid #fff;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/********************* Hero Section ******************/
+
+.hero-section {
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  margin: 2rem 0;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+/********************* Header Section ******************/
+
+.image-gallery ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0 6rem;
+}
+
+.image-gallery ul li {
+  background: #fff;
+  color: #556e5b;
+  margin: 0.4rem;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  transition: all 650ms ease;
+  border: 1px solid #556e5b;
+  cursor: pointer;
+}
+
+.image-gallery ul li.active {
+  background: #556e5b;
+  color: #fff;
+}
+
+.image-gallery ul li:hover {
+  background: #556e5b;
+  color: #fff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.gallery-img-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gallery-img-item h1 {
+  margin: 2rem 0;
+  font-size: 2.4rem;
+  color: blueviolet;
+  font-weight: 100;
+}
+
+.gallery-img-item p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-img-item span {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+/********************* Grid Container Section ******************/
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content .content-details {
+  margin-left: 0rem;
+  position: relative;
+}
+
+.content .content-details h1 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  color: blueviolet;
+}
+
+.content .content-details p {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}
+
+.content .content-details .btn {
+  background: #fff;
+  color: #556e5b;
+  margin: 0 0.4rem;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.6rem;
+  transition: all 650ms ease;
+  border: 1px solid #556e5b80;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.content .content-details .btn:hover {
+  background: #556e5b;
+  color: #fff;
+}
+
+/********************* Footer Section ******************/
+
+footer p {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/********************* About Section ******************/
+
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-gap: 8rem;
+}
+
+.about-team-grid {
+  display: flex;
+}
+
+.about-team-grid img {
+  height: 25rem;
+  width: 20rem;
+}
+
+.about-team {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-team h1 {
+  color: blueviolet;
+  font-weight: 100;
+  font-size: 2.3rem;
+}
+
+.about-team p {
+  font-size: 1.6rem;
+}
+
+.about-team ul,
+.contact-right ul {
+  display: flex;
+}
+
+.about-team ul li a,
+.contact-right ul li a {
+  font-size: 2.3rem;
+  color: gray;
+  padding: 0.5rem 1rem;
+}
+
+.about-team ul li a:hover,
+.contact-right ul li a:hover {
+  background: #556e5b;
+  color: #fff;
+}
+
+.about-team ul li:not(:last-child),
+.contact-right ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+/********************* Parralax Section ******************/
+
+.parallax-section {
+  height: 30vh;
+  background: url("../images/about-05.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/********************* Features Section ******************/
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.feature-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 30rem;
+}
+
+.feature-grid-item i {
+  font-size: 4rem;
+  color: gray;
+}
+
+.feature-grid-item p {
+  font-size: 1.7rem;
+  line-height: 3.4rem;
+}
+
+.fbtn {
+  display: block;
+  padding: 1rem 3rem;
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 650ms;
+}
+
+.btn-blue {
+  background-color: #2d99cc;
+}
+
+.btn-blue:hover {
+  background-color: #19749e;
+}
+
+.btn-green {
+  background-color: #319966;
+}
+
+.btn-green:hover {
+  background-color: #106e41;
+}
+
+.btn-red {
+  background-color: #993332;
+}
+
+.btn-red:hover {
+  background-color: #861c1a;
+}
+/********************* Contact Section ******************/
+
+.contact-content {
+  gap: 6rem;
+}
+
+.contact-left {
+  position: relative;
+}
+
+.contact-left .input-box {
+  width: 100%;
+}
+
+.contact-left .input-box:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.contact-left .input-box input,
+.contact-left .input-box textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 0.2rem solid gray;
+}
+
+.contact-left .input-box input::placeholder,
+.contact-left .input-box textarea::placeholder {
+  color: gray;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.contact-left .input-box input[type="submit"] {
+  width: 12rem;
+  padding: 1rem;
+  background: #106e41;
+  color: #fff;
+  font-size: 1.9rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  transition: all 550ms ease;
+}
+
+.contact-left .input-box input[type="submit"]:hover {
+  background: #065730;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-right h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  color: #106e41;
+}
+
+.contact-right .cr-box {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.contact-right .cr-box a {
+  font-size: 1.6rem;
+  color: #319966;
+  margin-bottom: 1rem;
+}
+
+.contact-right .cr-box a i {
+  margin-right: 1rem;
+}
+
+.contact-right ul {
+  margin-top: 1rem;
+}
+/********************* Responsive Section ******************/
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: none;
+    background: none;
+    padding: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  header {
+    margin-bottom: -15rem;
+  }
+
+  .hero-section {
+    margin-top: 5rem;
+  }
+
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content .content-details {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-team-profile {
+    margin: 2rem 0;
+  }
+
+  .about-team-grid {
+    flex-direction: column;
+  }
+
+  .about-team {
+    margin-left: 0;
+  }
+
+  .about-team ul {
+    margin-top: 2rem;
+  }
+
+  .about-team-grid p {
+    max-width: 70%;
+  }
+}
